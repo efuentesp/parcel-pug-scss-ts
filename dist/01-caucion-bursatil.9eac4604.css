@@ -1,0 +1,24 @@
+#causion-bursatil {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+#causion-bursatil #search-criterias-section {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+#causion-bursatil #search-criterias-section .panel-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#causion-bursatil #search-criterias-section .panel-content #search-criterias-column {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+#causion-bursatil #search-criterias-section .panel-content #search-actions-column {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 5px;
+  justify-content: right;
+}
+
+/*# sourceMappingURL=/01-caucion-bursatil.9eac4604.css.map */

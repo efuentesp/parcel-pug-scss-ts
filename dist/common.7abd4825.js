@@ -117,75 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"accimarket/01-caucion-bursatil.js":[function(require,module,exports) {
-console.log("01-caucion-bursatil");
-$("#criterios_busqueda_accordion").accordion({
-  collapsible: true
-});
-$("#input_date").datepicker({
-  showOn: "button",
-  buttonImage: "/images/calendar.gif",
-  buttonImageOnly: true
-});
-$("#table_contratos").jqGrid({
-  url: "http://localhost:3000/fideicomiso",
-  datatype: "json",
-  mtype: "GET",
-  colNames: ["Contrato", "Libro", "Cliente", "Digito", "TV", "Descr TV", "Emisora", "Serie", "Cantidad", "Precio", "Valuación", "Promotor", "Folio"],
-  colModel: [{
-    name: "generalesnumero",
-    width: 55
-  }, {
-    name: "generalesnombre",
-    width: 90
-  }, {
-    name: "generalesadministrador",
-    width: 80,
-    align: "right"
-  }, {
-    name: "generalespromotor",
-    width: 80,
-    align: "right"
-  }, {
-    name: "caracteristicasformamanejo",
-    width: 80,
-    align: "right"
-  }, {
-    name: "caracteristicastiponegocio",
-    width: 150,
-    sortable: false
-  }, {
-    name: "caracteristicasproducto",
-    width: 90
-  }, {
-    name: "caracteristicasmontoapertura",
-    width: 90
-  }, {
-    name: "adicionalesnoescritura",
-    width: 90
-  }, {
-    name: "caracteristicasfechaalta",
-    width: 90
-  }, {
-    name: "adicionalesfechainscripcion",
-    width: 90
-  }, {
-    name: "adicionalesnombrenotario",
-    width: 90
-  }, {
-    name: "adicionalesnonotario",
-    width: 90
-  }],
-  pager: "#pager_contratos",
-  rowNum: 10,
-  rowList: [10, 20, 30],
-  sortname: "generalesnumero",
-  sortorder: "desc",
-  viewrecords: true,
-  gridview: true,
-  autoencode: true,
-  caption: ""
-});
+})({"../scripts/common.ts":[function(require,module,exports) {
+$(document).tooltip();
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -214,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -389,5 +322,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","accimarket/01-caucion-bursatil.js"], null)
-//# sourceMappingURL=/01-caucion-bursatil.2077b7fb.js.map
+},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../scripts/common.ts"], null)
+//# sourceMappingURL=/common.7abd4825.js.map

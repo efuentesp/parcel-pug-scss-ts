@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"accimarket/03-seguimiento-de-ordenes-historico.js":[function(require,module,exports) {
+})({"accimarket/03-seguimiento-de-ordenes-historico.ts":[function(require,module,exports) {
 console.log("03-seguimiento-de-ordenes-historico");
 $("#criterios_busqueda_accordion").accordion({
   collapsible: true
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -385,5 +385,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","accimarket/03-seguimiento-de-ordenes-historico.js"], null)
-//# sourceMappingURL=/03-seguimiento-de-ordenes-historico.94d520b7.js.map
+},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","accimarket/03-seguimiento-de-ordenes-historico.ts"], null)
+//# sourceMappingURL=/03-seguimiento-de-ordenes-historico.daffe009.js.map

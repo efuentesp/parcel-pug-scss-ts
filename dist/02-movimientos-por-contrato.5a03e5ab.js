@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"accimarket/02-movimientos-por-contrato.js":[function(require,module,exports) {
+})({"accimarket/02-movimientos-por-contrato.ts":[function(require,module,exports) {
 console.log("01-02-movimientos-por-contrato");
 $("#criterios_busqueda_accordion").accordion({
   collapsible: true
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -385,5 +385,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","accimarket/02-movimientos-por-contrato.js"], null)
-//# sourceMappingURL=/02-movimientos-por-contrato.bc9ac303.js.map
+},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","accimarket/02-movimientos-por-contrato.ts"], null)
+//# sourceMappingURL=/02-movimientos-por-contrato.5a03e5ab.js.map

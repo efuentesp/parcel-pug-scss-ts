@@ -1,7 +1,7 @@
-mixin field-options(id, ...items)
+mixin field-options(id, required=false, ...items)
   .field
       .control
         each item in items
-          input(type="radio" name=id value=item.key)
+          input(type="radio" name=id value=item.key required=required)
           = item.value
           br

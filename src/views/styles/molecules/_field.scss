@@ -1,32 +1,82 @@
 @import "../vars";
 
 .field {
-  display: grid;
-  grid-template-rows: [field-label] 20px [field-control] 24px;
+  padding: 6px;
 
   label {
     display: block;
     font-weight: bold;
+    padding-bottom: 5px;
+
+    span {
+      color: $color-red-dark;
+    }
   }
 
   .input {
-    height: 1.5em;
-    background-color: $white;
-    border: 1px solid lightgray;
+    //display: block;
+    background-color: $input_background_color;
+    border: 1px solid $input_border-color;
     border-radius: 6px;
-    color: $dark_gray;
-    max-width: 100%;
-    width: 100%;
+    color: $input_color;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1em
+
+    &:disabled {
+      background-color: $input_background-color_disabled;
+    }
+
+    &.is-extra-small {
+      width: 64px;
+    }
 
     &.is-small {
-      width: 125px;
+      width: 128px;
+    }
+
+    &.is-medium {
+      width: 256px;
+    }
+
+    &.is-large {
+      width: 512px;
+    }
+
+    &.has-error {
+      border: 1px solid $color-red-dark;
+    }
+  }
+
+  input {
+    height: 2.1em;
+  }
+
+  p {
+    &.help-text {
+      color: $color-ink-lighter;
+      font-size: 90%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  ul {
+    &.error-list {
+      list-style: none;
+      padding-inline-start: 0;
+      margin-block-start: 0.3em;
+
+      li {
+        color: $color-red-dark;
+      }
     }
   }
 
   .control {
     box-sizing: border-box;
     clear: both;
-    font-size: 1rem;
+    // font-size: 1rem;
     position: relative;
     text-align: left;
 
